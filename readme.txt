@@ -1,6 +1,6 @@
 === Check Wallet ===
 Contributors: tomek00
-Tags: widget, sidebar, shortcode, bitcoin, coin, btc, faucetbox, microwallet, blockchain
+Tags: widget, sidebar, shortcode, bitcoin, coin, btc, faucetbox, microwallet, blockchain, sochain
 Donate link: http://wp-learning.net/blog/felajanl
 Tested up to: 4.2.2
 Stable tag: trunk

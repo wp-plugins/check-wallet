@@ -6,6 +6,8 @@ if(isset($_GET['processor'])){
 		header("Location: https://faucetbox.com/check/".$_GET['address']);
 	} else if($_GET['processor'] == 3 ){
 		header("Location: https://microwallet.org/?u=".$_GET['address']);
+	} else if($_GET['processor'] == 4 ){
+		header("Location: https://chain.so/address/BTC/".$_GET['address']);
 	}
 }
 ?>

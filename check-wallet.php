@@ -2,7 +2,7 @@
 /*
 Plugin Name: Check Wallet
 Description: Check the balance of your Bitcoin wallet
-Version: 1.0
+Version: 1.1
 Author: Tomek
 Author URI: http://wp-learning-net
 */
@@ -17,7 +17,7 @@ function check_wallet_shortcode( $atts, $content = null ) {
 			<option value="1">Blockchain</option>
 			<option value="2">FaucetBOX</option>
 			<option value="3">Microwallet</option>
-
+			<option value="4">SoChain</option>
 </select>
 <input type="submit" value="<?php _e('Check now', 'check-wallet') ?>" />
 </form>
@@ -48,7 +48,7 @@ class WP_Widget_Check_Wallet extends WP_Widget {
 			<option value="1">Blockchain</option>
 			<option value="2">FaucetBOX</option>
 			<option value="3">Microwallet</option>
-
+			<option value="4">SoChain</option>
 </select>
 <input type="submit" value="<?php _e('Check now', 'check-wallet') ?>" />
 </form>
