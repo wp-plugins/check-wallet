@@ -2,7 +2,7 @@
 /*
 Plugin Name: Check Wallet
 Description: Check the balance of your Bitcoin wallet
-Version: 1.1
+Version: 1.2
 Author: Tomek
 Author URI: http://wp-learning-net
 */
@@ -10,18 +10,17 @@ Author URI: http://wp-learning-net
 load_plugin_textdomain( 'check-wallet', '', dirname( plugin_basename( __FILE__ ) ) . '/lang' );
 
 function check_wallet_shortcode( $atts, $content = null ) {
-?>
-<form action="<?php echo plugins_url('check-wallet/go.php'); ?>" method="get" target="_blank">
-<input type="text" name="address" placeholder="<?php _e('Bitcoin address here', 'check-wallet') ?>">
-<select name="processor">
-			<option value="1">Blockchain</option>
-			<option value="2">FaucetBOX</option>
-			<option value="3">Microwallet</option>
-			<option value="4">SoChain</option>
-</select>
-<input type="submit" value="<?php _e('Check now', 'check-wallet') ?>" />
-</form>
- <?php
+	$form = '<div class="check-wallet"><center><form action="'.plugins_url('check-wallet/go.php').'" method="get" target="_blank">
+			<input type="text" name="address" placeholder="'.__('Bitcoin address here', 'check-wallet').'">
+			 <select name="processor">
+				<option value="1">Blockchain</option>
+				<option value="2">FaucetBOX</option>
+				<option value="3">Microwallet</option>
+				<option value="4">SoChain</option>
+			 </select>
+			 <input type="submit" value="'.__('Check now', 'check-wallet').'">
+			 </form></div>';
+	return $form;
 }
 
 function check_wallet_widget() {

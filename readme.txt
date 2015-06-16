@@ -10,6 +10,12 @@ Check the balance of your Bitcoin wallet
 == Description ==
 Use shortcode ([check-wallet]) or widget
 
+CSS (In case of shortcode):
+
+	.check-wallet {
+		background-color: #b0c4de;
+	}
+
 == Installation ==
 
 1. Extract the plugin folder from the downloaded ZIP file.
